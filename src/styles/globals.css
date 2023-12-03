@@ -26,8 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.antd-demo-dynamic-option img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
+
+.card {
+  border: 1px solid #ccc;
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
