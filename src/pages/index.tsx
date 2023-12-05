@@ -2,7 +2,6 @@ import {Inter} from 'next/font/google';
 import React, {useState, useEffect} from 'react';
 import Input from 'antd/lib/input/index.js';
 
-
 const {Search} = Input;
 const inter = Inter({subsets: ['latin']});
 
@@ -44,8 +43,6 @@ export default function Home() {
         <main
             className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
         >
-
-
             <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
                 <Search
                     placeholder="input search text"
@@ -64,17 +61,16 @@ export default function Home() {
                         .map((item: any, index) => (
                             <div key={index} className="border p-2 mb-2">
                                 {/* 在这里显示 item 的具体属性 */}
-                                <span style={{ display: 'block' }}>keyword: {item.keyword}</span>
-                                <span style={{ display: 'block' }}>between: {item.between}</span>
-                                <span style={{ display: 'block' }}>compete: {item.compete}</span>
-                                <span style={{ display: 'block' }}>correlation: {item.correlation}</span>
+                                <span style={{display: 'block'}}>keyword: {item.keyword}</span>
+                                <span style={{display: 'block'}}>between: {item.between}</span>
+                                <span style={{display: 'block'}}>compete: {item.compete}</span>
+                                <span style={{display: 'block'}}>correlation: {item.correlation}</span>
                             </div>
                         ))
                 ) : (
                     <p>No data available</p>
                 )}
             </div>
-
 
 
         </main>
